@@ -20,7 +20,7 @@ header {
     padding-bottom: 20px;
 }
 
-header .head{
+.head{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,6 +95,15 @@ header .head{
     color: #FFFFFF;
 }
 
+.wrap_title::before {
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #FFFFFF;
+    margin-bottom: 63px;
+    content: "";
+}
+
 .wrap_text {
     font-weight: 400;
     font-size: 16px;
@@ -151,6 +160,16 @@ header .head{
     margin-bottom: 96px;
 }
 
+.box_title::before {
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #C396C6;   
+    margin-top: 305px; 
+    margin-bottom: 63px;
+    content: "";
+}
+
 .box_title2 {
     font-family: 'DM Serif Display', "Times New Roman", serif;
     font-weight: 400;
@@ -162,6 +181,33 @@ header .head{
 
 .box_item {
     width: 350px;
+}
+
+.box_item::before {
+    display: inline-block;
+    width: 86px;
+    height: 86px;
+    background-image: url("../IMAGES/SECTION_chaqmoq.svg");
+    background-size: 86px;
+    content: "";
+}
+
+.box_item:nth-child(2)::before {
+    display: inline-block;
+    width: 86px;
+    height: 86px;
+    background-image: url("../IMAGES/section-dollar.svg");
+    background-size: 86px;
+    content: "";
+}
+
+.box_item::before {
+    display: inline-block;
+    width: 86px;
+    height: 86px;
+    background-image: url("../IMAGES/section-people.svg");
+    background-size: 86px;
+    content: "";
 }
 
 .box_text {
@@ -178,10 +224,10 @@ header .head{
 }
 
 .find_wrap {
-    background: #2D2641;
     display: flex; 
     justify-content: space-around;
     align-items: center;
+    background-image: url("../IMAGES/find-bg.jpg");
 }
 
 .find-title {
@@ -254,13 +300,12 @@ footer {
     width: 255px;
 }
 
-
 .menu_list {
+    padding: 0;
+    margin: 0;
     width: 255px;
     margin-left: 30px;
-    padding: 0;
 }
-
 
 .menu_wrap_text {
     font-style: normal;
